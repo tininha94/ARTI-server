@@ -79,12 +79,13 @@ def normalizeSignal(record):
     
 @app.route('/')
 def UploadFiles():
-    if 'file' not in request.files:
-        return make_response(jsonify({"message":"Arquivo obrigatório!"}), 500) 
-    file = request.files['file']
-    if file and isFileAllowed(file.filename):
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], "file.dat"))
-        return make_response(jsonify({"message":"Upload realizado com sucesso!"}), 200) 
+    # if 'file' not in request.files:
+    #     return make_response(jsonify({"message":"Arquivo obrigatório!"}), 500) 
+    # file = request.files['file']
+    # if file and isFileAllowed(file.filename):
+    #     file.save(os.path.join(app.config['UPLOAD_FOLDER'], "file.dat"))
+    #     return make_response(jsonify({"message":"Upload realizado com sucesso!"}), 200) 
+    return "oi"
 
 @app.route('/result')
 def GetResult():
