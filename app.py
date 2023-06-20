@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-# import os
+import os
 from flask import Flask, request, jsonify, make_response
-# from flask_restful import Resource, Api
-# from flask_cors import CORS
+from flask_restful import Resource, Api
+from flask_cors import CORS
 
-# import wfdb
-# import pandas as pd
-# import numpy as np
-# import json
-# from tensorflow.keras.models import load_model
+import wfdb
+import pandas as pd
+import numpy as np
+import json
+from tensorflow.keras.models import load_model
 
 # UPLOAD_FOLDER = 'resources'
 # MODEL_PATH = UPLOAD_FOLDER + '/model/mymodel.h5'
