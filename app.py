@@ -10,10 +10,10 @@ import numpy as np
 import json
 from tensorflow.keras.models import load_model
 
-UPLOAD_FOLDER = 'resources'
-MODEL_PATH = UPLOAD_FOLDER + '/model/mymodel.h5'
-FILE_PATH = UPLOAD_FOLDER + '/file'
-ALLOWED_EXTENSIONS = set(['dat'])
+# UPLOAD_FOLDER = 'resources'
+# MODEL_PATH = UPLOAD_FOLDER + '/model/mymodel.h5'
+# FILE_PATH = UPLOAD_FOLDER + '/file'
+# ALLOWED_EXTENSIONS = set(['dat'])
 
 app = Flask(__name__)
 # CORS(app)
