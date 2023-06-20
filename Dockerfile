@@ -9,11 +9,10 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy other project files
-COPY . /app
+COPY . .
 
 # Expose a port to Containers 
 EXPOSE 8080
 
 # Command to run on server
-CMD ["flask", "run", "--host=0.0.0.0"]
-
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
