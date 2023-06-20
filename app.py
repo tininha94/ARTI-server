@@ -16,11 +16,11 @@ FILE_PATH = UPLOAD_FOLDER + '/file'
 ALLOWED_EXTENSIONS = set(['dat'])
 
 app = Flask(__name__)
-CORS(app)
-api = Api(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+# CORS(app)
+# api = Api(app)
+# app.config['CORS_HEADERS'] = 'Content-Type'
+# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 # def isFileAllowed(filename):
 #     return '.' in filename and \
